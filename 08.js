@@ -15,7 +15,11 @@
 
 // TODO: chunkArray 함수를 작성하세요.
 function chunkArray(arr, size) {
-  // TODO
+  const divide = [];
+  for(let i = 0 ; i < arr.length ; i += size) {
+    divide.push(arr.slice(i, i+size));
+  }
+  return divide;
 }
 
 // export를 수정하지 마세요.
